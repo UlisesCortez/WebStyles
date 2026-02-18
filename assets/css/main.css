@@ -4502,3 +4502,21 @@ h3.major::after {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #ff6600, #ffcc00);
 }
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #ff5500 20%,
+    #ffaa00 50%,
+    #ff5500 80%,
+    transparent 100%
+  );
+  z-index: 10;
+}
