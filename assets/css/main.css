@@ -187,27 +187,40 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: #636569;
+  background-color: #080400;
   background-image:
-    radial-gradient(
-      1200px 600px at 15% 10%,
-      rgba(30, 230, 252, 0.18),
-      transparent 60%
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(255, 80, 0, 0.05) 39px,
+      rgba(255, 80, 0, 0.05) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 39px,
+      rgba(255, 80, 0, 0.05) 39px,
+      rgba(255, 80, 0, 0.05) 40px
     ),
     radial-gradient(
-      900px 500px at 85% 20%,
-      rgba(124, 92, 255, 0.18),
-      transparent 55%
+      ellipse 70% 50% at 15% 15%,
+      rgba(255, 60, 0, 0.18),
+      transparent
     ),
     radial-gradient(
-      700px 500px at 50% 90%,
-      rgba(25, 255, 168, 0.12),
-      transparent 55%
+      ellipse 60% 50% at 85% 80%,
+      rgba(255, 180, 0, 0.12),
+      transparent
     ),
-    linear-gradient(180deg, #0b1220, #0f1a33);
-  background-size: cover;
+    linear-gradient(160deg, #080400 0%, #0f0500 50%, #060008 100%);
   background-attachment: fixed;
-  background-position: center;
+  background-size:
+    40px 40px,
+    40px 40px,
+    100% 100%,
+    100% 100%,
+    100% 100%;
 }
 
 body.is-preload *,
@@ -229,8 +242,8 @@ body,
 input,
 select,
 textarea {
-  color: #ffffff;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: #f0d0b0;
+  font-family: "Space Mono", "Courier New", monospace;
   font-size: 16.5pt;
   font-weight: 300;
   line-height: 1.65;
