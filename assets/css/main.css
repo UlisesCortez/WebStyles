@@ -3149,24 +3149,39 @@ button:disabled,
 
 .features article {
   padding: 1.75em 1.75em 0.1em 1.75em;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  border: 1px solid rgba(0, 200, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 150, 255, 0.05);
+  background-color: rgba(255, 60, 0, 0.04);
+  border-radius: 0;
+  border: 1px solid rgba(255, 85, 0, 0.2);
+  border-left: 3px solid rgba(255, 85, 0, 0.7);
   margin: 1.5em 3em 1.5em 0;
   width: calc(50% - 1.5em);
-  transition:
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.features article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 85, 0, 0.9),
+    rgba(255, 180, 0, 0.4),
+    transparent
+  );
 }
 
 .features article:hover {
-  border-color: rgba(0, 200, 255, 0.5);
-  box-shadow: 0 0 40px rgba(0, 150, 255, 0.15);
+  background-color: rgba(255, 60, 0, 0.08);
+  border-color: rgba(255, 85, 0, 0.6);
+  box-shadow:
+    0 0 40px rgba(255, 60, 0, 0.1),
+    inset 0 0 30px rgba(255, 60, 0, 0.04);
+  transform: translateY(-2px);
 }
-
 .features article:nth-child(2n) {
   margin-right: 0;
 }
