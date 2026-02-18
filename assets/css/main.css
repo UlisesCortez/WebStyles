@@ -4049,15 +4049,26 @@ body.is-preload #banner p {
 }
 
 .wrapper.spotlight .image {
-  border-radius: 100%;
+  border-radius: 0;
   margin: 0 3em 2em 0;
   width: 22em;
   overflow: hidden;
+  border: 2px solid rgba(255, 85, 0, 0.4);
+  border-left: 4px solid #ff5500;
+  box-shadow:
+    0 0 30px rgba(255, 60, 0, 0.15),
+    -5px 0 20px rgba(255, 85, 0, 0.1);
 }
 
 .wrapper.spotlight .image img {
-  border-radius: 100%;
+  border-radius: 0;
   width: 100%;
+  filter: brightness(0.9) contrast(1.1);
+  transition: filter 0.3s ease;
+}
+
+.wrapper.spotlight .image img:hover {
+  filter: brightness(1.1) contrast(1.2);
 }
 
 .wrapper.spotlight .content {
