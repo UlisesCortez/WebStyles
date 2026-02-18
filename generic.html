@@ -29,7 +29,7 @@
       </header>
 
       <!-- Menu -->
-      <nav id="menu">
+      <nav id="menu" role="navigation" aria-label="Menú principal">
         <div class="inner">
           <h2>Menu</h2>
           <ul class="links">
@@ -130,15 +130,35 @@
             <div class="fields">
               <div class="field">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Tu nombre completo"
+                  autocomplete="name"
+                  required
+                />
               </div>
               <div class="field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="correo@ejemplo.com"
+                  autocomplete="email"
+                  required
+                />
               </div>
               <div class="field">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Escribe tu mensaje aquí"
+                  required
+                ></textarea>
               </div>
             </div>
             <ul class="actions">
