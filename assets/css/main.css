@@ -3423,7 +3423,7 @@ button:disabled,
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: rgba(46, 49, 65, 0.8);
+  background: rgba(8, 2, 0, 0.92);
   cursor: default;
   height: 100%;
   left: 0;
@@ -3437,25 +3437,18 @@ button:disabled,
 
 #menu .inner {
   padding: 2.5em 1.5em 0.5em 1.5em;
-  -moz-transform: translateY(0.5em);
-  -webkit-transform: translateY(0.5em);
-  -ms-transform: translateY(0.5em);
   transform: translateY(0.5em);
-  -moz-transition:
-    opacity 0.35s ease,
-    -moz-transform 0.35s ease;
-  -webkit-transition:
-    opacity 0.35s ease,
-    -webkit-transform 0.35s ease;
-  -ms-transition:
-    opacity 0.35s ease,
-    -ms-transform 0.35s ease;
   transition:
     opacity 0.35s ease,
     transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
-  border-radius: 5px;
+  background: rgba(15, 5, 0, 0.98);
+  border: 1px solid rgba(255, 85, 0, 0.4);
+  border-top: 3px solid rgba(255, 85, 0, 0.8);
+  border-radius: 0;
+  box-shadow:
+    0 0 60px rgba(255, 60, 0, 0.3),
+    inset 0 0 40px rgba(255, 40, 0, 0.05);
   display: block;
   max-width: 100%;
   opacity: 0;
