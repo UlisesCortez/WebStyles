@@ -4430,3 +4430,34 @@ h3.major::after {
   background: linear-gradient(90deg, #ff5500, #ffaa00, transparent);
   margin-top: 0.4em;
 }
+
+.features article:nth-child(1)::after {
+  content: "01";
+}
+.features article:nth-child(2)::after {
+  content: "02";
+}
+.features article:nth-child(3)::after {
+  content: "03";
+}
+.features article:nth-child(4)::after {
+  content: "04";
+}
+.features article:nth-child(5)::after {
+  content: "05";
+}
+.features article:nth-child(6)::after {
+  content: "06";
+}
+
+.features article::after {
+  position: absolute;
+  bottom: 0.2em;
+  right: 0.4em;
+  font-size: 5em;
+  font-family: "Syne", Impact, sans-serif;
+  font-weight: 800;
+  color: rgba(255, 85, 0, 0.12);
+  line-height: 1;
+  pointer-events: none;
+}
