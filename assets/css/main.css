@@ -97,17 +97,18 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
+body{
+	background-color:#0b1220;
+	background-image:
+		radial-gradient(1200px 600px at 15% 10%, rgba(0,229,255,.18), transparent 60%),
+		radial-gradient(900px 500px at 85% 20%, rgba(124,92,255,.18), transparent 55%),
+		radial-gradient(700px 500px at 50% 90%, rgba(25,255,168,.12), transparent 55%),
+		linear-gradient(180deg, #0b1220, #0f1a33);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+}
 
-	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto,
- cover;
-		background-attachment: fixed,
- fixed;
-		background-position: center,
- center;
-	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -3071,12 +3072,16 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
+#header {
 		-moz-transition: background-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: rgba(0, 0, 0, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		border-bottom: 1px solid rgba(0, 255, 200, 0.3);
+		box-shadow: 0 0 30px rgba(0, 255, 200, 0.1);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3802,7 +3807,7 @@ input, select, textarea {
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
-				-ms-flex: 1;
+				
 			}
 
 				.wrapper.spotlight .image img {
@@ -3812,7 +3817,7 @@ input, select, textarea {
 
 			.wrapper.spotlight .content {
 				width: 100%;
-				-ms-flex: 2;
+				
 			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .inner {
@@ -4153,47 +4158,4 @@ input, select, textarea {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
-	}
-
-	/* Scroll to Top Button */
-	.scroll-top-btn {
-		position: fixed;
-		bottom: 2rem;
-		right: 2rem;
-		width: 50px;
-		height: 50px;
-		background-color: #1e90ff;
-		color: white;
-		border: none;
-		border-radius: 50%;
-		cursor: pointer;
-		font-size: 1.25rem;
-		display: none;
-		align-items: center;
-		justify-content: center;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-		transition: all 0.3s ease;
-		z-index: 100;
-	}
-
-	.scroll-top-btn:hover {
-		background-color: #0d66d0;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-		transform: translateY(-2px);
-	}
-
-	.scroll-top-btn.show {
-		display: flex;
-		animation: fadeIn 0.3s ease;
-	}
-
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-			transform: translateY(20px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
 	}
