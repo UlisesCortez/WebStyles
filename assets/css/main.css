@@ -430,17 +430,19 @@ h6.major {
   padding-bottom: 1em;
   border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
-
+h1 {
+  font-size: 3em;
+}
 h2 {
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 1.3em;
 }
 
 h4 {
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 h5 {
