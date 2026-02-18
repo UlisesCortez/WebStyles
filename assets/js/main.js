@@ -142,4 +142,19 @@
 
 			});
 
+	// Scroll to top button.
+		var $scrollTopBtn = $('#scroll-top-btn');
+
+		$window.on('scroll', function() {
+			if ($window.scrollTop() > 300) {
+				$scrollTopBtn.addClass('show');
+			} else {
+				$scrollTopBtn.removeClass('show');
+			}
+		});
+
+		$scrollTopBtn.on('click', function() {
+			$('html, body').animate({ scrollTop: 0 }, 'smooth');
+		});
+
 })(jQuery);
