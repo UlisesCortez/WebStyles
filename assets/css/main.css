@@ -4412,3 +4412,21 @@ body.is-preload #banner p {
     padding: 2em 1.5em 0.1em 1.5em;
   }
 }
+h1.major,
+h2.major,
+h3.major {
+  border-bottom: none !important;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+
+h1.major::after,
+h2.major::after,
+h3.major::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff5500, #ffaa00, transparent);
+  margin-top: 0.4em;
+}
