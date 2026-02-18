@@ -3243,24 +3243,47 @@ button:disabled,
 /* Header */
 
 #header {
-  transition: background-color 0.2s ease-in-out;
-  background-color: rgba(8, 4, 0, 0.97);
-  border-bottom: 1px solid rgba(255, 85, 0, 0.4);
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #0f0400 0%, #080200 50%, #0f0400 100%);
+  border-bottom: 2px solid rgba(255, 85, 0, 0.5);
   box-shadow:
-    0 2px 40px rgba(255, 60, 0, 0.12),
-    inset 0 -1px 0 rgba(255, 85, 0, 0.08);
-  height: 3.5em;
+    0 4px 30px rgba(255, 60, 0, 0.2),
+    0 1px 0 rgba(255, 180, 0, 0.1);
+  height: 4em;
   left: 0;
-  line-height: 3.5em;
-  padding: 0 1.25em;
+  line-height: 4em;
+  padding: 0 2em;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10000;
 }
 
+#header h1 {
+  font-size: 1em !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 #header h1 a {
   border: 0;
+  color: #ff5500 !important;
+  font-family: "Space Mono", monospace !important;
+  font-size: 1.1em;
+  letter-spacing: 0.3em;
+  text-shadow: 0 0 20px rgba(255, 85, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+#header h1 a::before {
+  content: "// ";
+  color: rgba(255, 180, 0, 0.7);
+  font-size: 0.8em;
+}
+
+#header h1 a:hover {
+  color: #ffaa00 !important;
+  text-shadow: 0 0 40px rgba(255, 150, 0, 0.8);
 }
 
 #header nav {
