@@ -4461,3 +4461,19 @@ h3.major::after {
   line-height: 1;
   pointer-events: none;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080400;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff4400, #ff9900);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6600, #ffcc00);
+}
